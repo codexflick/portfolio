@@ -32,9 +32,3 @@ filterBtns.forEach(btn => {
 document.querySelector('.theme-toggle').addEventListener('click', function () {
   document.body.classList.toggle('light-mode');
 });
-
-// contact form submit (placeholder)
-document.querySelector('.contact-card form').addEventListener('submit', function (e) {
-  e.preventDefault();
-  alert('Message ready to send — connect a backend or mail service to actually send it.');
-});
