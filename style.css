@@ -189,3 +189,8 @@ footer{border-top:1px solid var(--border);padding:22px 24px;display:flex;justify
   height: auto;
   border-radius: 10px;
 }
+.project-thumb img {
+  width: 100%;
+  height: auto;
+  boder-redius: 10px;
+}
