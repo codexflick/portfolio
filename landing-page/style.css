@@ -363,3 +363,27 @@ footer{background:#0d0d17;color:#a7a5bd;padding:60px 24px 26px;margin-top:60px;}
   .cta-section{margin:0 16px;padding:50px 24px;}
   .footer-grid{grid-template-columns:1fr;}
 }
+/* MOBILE RESPONSIVE */
+@media (max-widht: 768px)   {
+   h1 {
+      font-size: 28px;
+      line-height: 1 . 3;
+   }
+   p {
+      font-size: 14px;
+   }
+   .container {
+      padding: 20px;
+   }
+   .hero {
+      flex-direction: column;
+      text-align: center;
+   }
+   .button {
+      flex-direction: column;
+      gam: 10px;
+   }
+   .btn {
+      width: 100%;
+   }
+}
