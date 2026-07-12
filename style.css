@@ -194,3 +194,8 @@ footer{border-top:1px solid var(--border);padding:22px 24px;display:flex;justify
   height: auto;
   boder-redius: 10px;
 }
+.project-card:hover   .project-thumb img
+{
+  transform: scale(1.05);
+  transform:0.3s;
+}
