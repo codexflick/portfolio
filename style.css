@@ -51,7 +51,7 @@ nav{display:flex;align-items:center;justify-content:space-between;padding:18px 2
   display:flex;align-items:center;justify-content:center;color:var(--muted);
   transition:.2s;
 }
-.icon-btn:hover{border-color:var(--purple);color:var(--text);}
+.icon-btn:hover{border-color:white;color:var(--text);}
 .theme-toggle{
   width:52px;height:30px;border-radius:20px;background:var(--card);border:1px solid var(--border);
   display:flex;align-items:center;padding:3px;cursor:pointer;
@@ -183,15 +183,4 @@ footer{border-top:1px solid var(--border);padding:22px 24px;display:flex;justify
 @media(max-width:560px){
   .projects-grid{grid-template-columns:1fr;}
   .row2{flex-direction:column;}
-}
-.nav-icons a i {
-  font-size: 22px;
-  color: white;
-}
-.nav-icons a i:hover {
-  color: #00f7ff;
-}
-
-.nav-icon a {
-  display: inline-block; 
 }
