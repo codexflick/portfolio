@@ -14,7 +14,10 @@
 <header>
   <nav>
     <div class="logo"><span class="tag">&lt;/&gt;</span> Azam</div>
-    <ul class="nav-links">
+    <!-- mobile icon -->
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+    
+    <ul class="nav-links" id="nav-links">
       <li><a href="#home" class="active">Home</a></li>
       <li><a href="#about">About</a></li>
       <li><a href="#skills">Skills</a></li>
@@ -215,7 +218,6 @@
     </div>
   </div>
 </section>
-
 <footer>
   <span>© 2026 Azam Ali. All rights reserved.</span>
   <span class="tag" style="color:var(--purple);">&lt;/&gt;</span>
@@ -223,5 +225,15 @@
 </footer>
 
 <script src="script.js"></script>
+
+         <!-- upgrade-->
+        <script>
+const toggle = document.getElementById("menu-toggle");
+const navLinks = document.getElementById("nav-links");
+
+toggle.addEventListener("click", () => {
+  navLinks.classList.toggle("active");
+});
+</script>
 </body>
 </html>
