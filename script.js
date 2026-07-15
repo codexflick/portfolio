@@ -32,3 +32,10 @@ filterBtns.forEach(btn => {
 document.querySelector('.theme-toggle').addEventListener('click', function () {
   document.body.classList.toggle('light-mode');
 });
+
+const menuToggle = document.getElementById('menu-toggle');
+const navLinksContainer = document.getElementById('nav-links');
+
+menuToggle.addEventListener('click', () => {
+  navLinksContainer.classList.toggle('active');
+});
