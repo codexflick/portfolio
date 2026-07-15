@@ -219,3 +219,18 @@ footer{border-top:1px solid var(--border);padding:22px 24px;display:flex;justify
     display: flex;
   }
 }
+
+.hero-image {
+  pointer-events: none;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-buttons a {
+  position: relative;
+  z-index: 10;
+  
+}
