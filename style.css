@@ -190,3 +190,32 @@ footer{border-top:1px solid var(--border);padding:22px 24px;display:flex;justify
   color: white;
   font-size: 20px;
 }
+
+/* Default (Laptop) */
+.menu-toggle {
+  display: none;
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background: #111;
+    width: 200px;
+    flex-direction: column;
+    display: none;
+    padding: 20px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+}
