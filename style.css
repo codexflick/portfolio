@@ -240,13 +240,15 @@ footer{border-top:1px solid var(--border);padding:22px 24px;display:flex;justify
   z-index: 20;
 }
 
-.navbar {
+nav {
   display: flex;
+  align-item: center;
   justify-content: space-between;
-  align-items: center; 
 }
 
-.menu-icon {
+.nav-icon {
+  display: flex;
+  align-item: center;
+  gap: 5px;
   margin-left: auto;
-  cursor: pointer;
 }
