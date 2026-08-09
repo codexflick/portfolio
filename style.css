@@ -113,27 +113,33 @@ section{padding:70px 0;}
   background:var(--card);border:1px solid var(--border);border-radius:18px;
   padding:50px;display:grid;grid-template-columns:.7fr 1.6fr 1fr;gap:40px;align-items:start;
 }
-.about-icon{
-  width:130px;height:130px;border:2px solid rgba(139,92,246,.5);border-radius:20px;
-  display:flex;align-items:center;justify-content:center;margin:0 auto;
-  box-shadow:0 0 40px rgba(139,92,246,.25);color:var(--purple);font-size:2.5rem;
-}
-.compass {
-  display: inline-block;
-  font-size: 28px;
-  animation: rotateCompass 4s ease-in-out infinite;
-  transition: 0.3s;
+.about-card {
+  position: relative; /* ye MUST hai */
 }
 
-@keyframes rotateCompass {
-  0% { transform: rotate(0deg); }
-  50% { transform: rotate(20deg); }
-  100% { transform: rotate(0deg); }
+/* Compass Fix */
+.about-icon {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+
+  font-size: 40px; /* size bada */
+  z-index: 2;
+
+  animation: floatCompass 3s ease-in-out infinite;
 }
 
-.compass:hover {
-  transform: scale(1.3) rotate(25deg);
-  filter: drop-shadow(0 0 10px #00f7ff);
+/* Floating Animation */
+@keyframes floatCompass {
+  0% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-10px) rotate(10deg); }
+  100% { transform: translateY(0px) rotate(0deg); }
+}
+
+/* Hover effect */
+.about-icon:hover {
+  transform: scale(1.2);
+  filter: drop-shadow(0 0 12px #00f7ff);
 }
 .about-card h3{font-size:1.6rem;margin-bottom:16px;}
 .about-card p{color:var(--muted);line-height:1.7;margin-bottom:14px;font-size:.95rem;}
