@@ -113,9 +113,7 @@ section{padding:70px 0;}
  .about-icon{
   width:130px;height:130px;border:2px solid rgba(139,92,246,.5);border-radius:20px;
   display:flex;align-items:center;justify-content:center;margin:0 auto;
-  box-shadow:0 0 40px rgba(139,92,246,.25);color:var(--purple);font-size:2.5rem;
-  position: relative;
-  overflow: hidden; 
+  box-shadow:0 0 40px rgba(139,92,246,.25);color:var(--purple);font-size:2.5rem; 
 }
 
 .compass{
@@ -130,11 +128,10 @@ section{padding:70px 0;}
   100% { transform: translateY(0px); }
 }
 
-.about-card{
-  position: relative;
-}
-.about-card h3{font-size:1.6rem;margin-bottom:16px;}
-.about-card p{color:var(--muted);line-height:1.7;margin-bottom:14px;font-size:.95rem;}
+
+
+.about-icon h3{font-size:1.6rem;margin-bottom:16px;}
+.about-icon p{color:var(--muted);line-height:1.7;margin-bottom:14px;font-size:.95rem;}
 .trait{display:flex;gap:14px;margin-bottom:22px;}
 .trait .ic{width:34px;height:34px;flex:none;display:flex;align-items:center;justify-content:center;border-radius:8px;font-size:1.1rem;}
 .trait h4{font-size:.98rem;margin-bottom:3px;}
