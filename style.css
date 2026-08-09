@@ -109,28 +109,33 @@ section{padding:70px 0;}
 .section-title{text-align:center;font-size:2.1rem;font-weight:700;margin-bottom:40px;}
 
 /* ABOUT */
-.about-icon{
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  width: auto;
-  height: auto;
-  font-size: 40px;
-  color: var(--purple);
-  z-index: 2;
-  margiin: 0;
-  animation: floatCompass 3s ease-in-out infinite;
-  
-  width:130px;height:130px;border:2px solid rgba(139,92,246,.5);border-radius:20px;
-  display:flex;align-items:center;justify-content:center;margin:0 auto;
-  box-shadow:0 0 40px rgba(139,92,246,.25);color:var(--purple);font-size:2.5rem;
+ .about-icon{
+  width:130px;
+  height:130px;
+  border:2px solid rgba(139,92,246,.5);
+  border-radius:20px;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  box-shadow:0 0 40px rgba(139,92,246,.25);
+  color:var(--purple);
+
+  position: relative;
+  overflow: hidden; /* IMPORTANT: bahar na nikle */
 }
 
+.compass{
+  font-size: 40px;
+
+  animation: floatCompass 3s ease-in-out infinite;
+}
 
 @keyframes floatCompass {
-  0% { transform: translateY(0px) rotate(0deg); }
-  50% { transform: translateY(-10px) rotate(10deg); }
-  100% { transform: translateY(0px) rotate(0deg); }
+  0%   { transform: translateY(0px); }
+  50%  { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
 }
 
 .about-card{
