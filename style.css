@@ -124,6 +124,13 @@ section{padding:70px 0;}
 
 .about-card h3{font-size:1.6rem;margin-bottom:16px;}
 .about-card p{color:var(--muted);line-height:1.7;margin-bottom:14px;font-size:.95rem;}
+.about-card{
+  transition: all 0.3s ease;
+}
+.about-card:hover{
+  transform: translateY(-60x);
+  box-shadow: 0 10px 40 px rgba(0,0,0,0.3);
+}
 .trait{display:flex;gap:14px;margin-bottom:22px;}
 .trait .ic{width:34px;height:34px;flex:none;display:flex;align-items:center;justify-content:center;border-radius:8px;font-size:1.1rem;}
 .trait h4{font-size:.98rem;margin-bottom:3px;}
