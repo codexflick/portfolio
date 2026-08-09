@@ -115,13 +115,15 @@ section{padding:70px 0;}
   left: 20px;
   width: auto;
   height: auto;
-  border: none;
-  box-shadow: none;
   font-size: 40px;
   color: var(--purple);
   z-index: 2;
   margiin: 0;
   animation: floatCompass 3s ease-in-out infinite;
+  
+  width:130px;height:130px;border:2px solid rgba(139,92,246,.5);border-radius:20px;
+  display:flex;align-items:center;justify-content:center;margin:0 auto;
+  box-shadow:0 0 40px rgba(139,92,246,.25);color:var(--purple);font-size:2.5rem;
 }
 
 
