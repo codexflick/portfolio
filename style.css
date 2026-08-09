@@ -109,37 +109,30 @@ section{padding:70px 0;}
 .section-title{text-align:center;font-size:2.1rem;font-weight:700;margin-bottom:40px;}
 
 /* ABOUT */
-.about-card{
-  background:var(--card);border:1px solid var(--border);border-radius:18px;
-  padding:50px;display:grid;grid-template-columns:.7fr 1.6fr 1fr;gap:40px;align-items:start;
-}
-.about-card {
-  position: relative; /* ye MUST hai */
-}
-
-/* Compass Fix */
-.about-icon {
+.about-icon{
   position: absolute;
   top: 20px;
   left: 20px;
-
-  font-size: 40px; /* size bada */
+  width: auto;
+  height: auto;
+  border: none;
+  box-shadow: none;
+  font-size: 40px;
+  color: var(--purple);
   z-index: 2;
-
+  margiin: 0;
   animation: floatCompass 3s ease-in-out infinite;
 }
 
-/* Floating Animation */
+
 @keyframes floatCompass {
   0% { transform: translateY(0px) rotate(0deg); }
   50% { transform: translateY(-10px) rotate(10deg); }
   100% { transform: translateY(0px) rotate(0deg); }
 }
 
-/* Hover effect */
-.about-icon:hover {
-  transform: scale(1.2);
-  filter: drop-shadow(0 0 12px #00f7ff);
+.about-card{
+  position: relative;
 }
 .about-card h3{font-size:1.6rem;margin-bottom:16px;}
 .about-card p{color:var(--muted);line-height:1.7;margin-bottom:14px;font-size:.95rem;}
